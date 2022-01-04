@@ -1,0 +1,9 @@
+<div class="d-flex justify-content-center">
+<table style="height: 150px; width: 150px">
+    <tr *ngFor="let row of grid" style="height: 50px">
+        <td *ngFor="let cell of row" style="width: 50px" (click)="clickOnCell(cell)" class="border text-center">{{cell[0]}}</td>
+    </tr>
+</table>
+</div>
+
+
