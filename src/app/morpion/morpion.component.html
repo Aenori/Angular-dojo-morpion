@@ -1,0 +1,11 @@
+<div class="d-flex justify-content-center">
+<table style="width: 150px; height: 150px">
+    <tr *ngFor="let row of grid" style="height: 50px">
+        <td *ngFor="let cell of row" style="width: 50px" class="border text-center"
+            (click)="clickOnCell(cell)">{{cell[0]}}</td>
+    </tr>
+</table>
+</div>
+<div class="d-flex justify-content-center">
+    <p>{{message}}</p>
+</div>
